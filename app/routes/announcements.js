@@ -18,9 +18,9 @@ export default Ember.Route.extend({
         if(params[key] !== undefined && params[key] !== "") {
           announcement.set(key, params[key]);
         }
-      })
+      });
       announcement.save();
-      this.transitionTo('announcements')
+      this.transitionTo('announcements');
     },
 
     destroyAnnouncement(announcement){

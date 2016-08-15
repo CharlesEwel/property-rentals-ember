@@ -1,0 +1,12 @@
+<div>
+  Sort by
+  {{radio-button value='rate' groupValue=sortBy}} Rate
+  {{radio-button value='city' groupValue=sortBy}} City
+  {{radio-button value='owner' groupValue=sortBy}} Owner
+</div>
+<div>
+  {{input type='checkbox' checked=reverseSort}} Descending
+</div>
+{{#each sortedRentals as |rental|}}
+   {{rental-tile rental=rental}}
+{{/each}}

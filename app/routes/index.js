@@ -2,8 +2,11 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model() {
-     return this.store.findAll('rental');
+     var rentalArray=(this.store.findAll('rental'));
+     console.log(rentalArray);
+     return rentalArray;
    },
+
    actions: {
     save3(params) {
       var newRental = this.store.createRecord('rental', params);
