@@ -1,0 +1,5 @@
+<h2>{{model.title}}</h2>
+<h4>{{model.date}}</h4>
+<p>{{model.content}}</p>
+{{update-announcement announcement=model update="update"}}
+<button {{action 'delete' announcement}}>Delete</button>

@@ -12,20 +12,5 @@ export default Ember.Route.extend({
       newAnnouncement.save();
       this.transitionTo('announcements');
     },
-
-    update(announcement, params){
-      Object.keys(params).forEach(function(key){
-        if(params[key] !== undefined && params[key] !== "") {
-          announcement.set(key, params[key]);
-        }
-      });
-      announcement.save();
-      this.transitionTo('announcements');
-    },
-
-    destroyAnnouncement(announcement){
-      announcement.destroyRecord();
-      this.transitionTo('announcements');
-    }
   }
 });

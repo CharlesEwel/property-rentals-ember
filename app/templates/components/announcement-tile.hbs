@@ -1,5 +1,1 @@
-<h2>{{announcement.title}}</h2>
-<h4>{{announcement.date}}</h4>
-<p>{{announcement.content}}</p>
-{{update-announcement announcement=announcement update="update"}}
-<button {{action 'delete' announcement}}>Delete</button>
+<li>{{#link-to 'announcement' announcement.id}}{{announcement.date}}, {{announcement.title}}{{/link-to}}</li>
