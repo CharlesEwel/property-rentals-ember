@@ -2,6 +2,12 @@
 
 module.exports = function(environment) {
   var ENV = {
+    firebase: {
+      apiKey: "AIzaSyBwXquNnlDJl80raODwV4cD6m4_xeiC3so",
+      authDomain: "myepicodusdemo.firebaseapp.com",
+      databaseURL: "https://myepicodusdemo.firebaseio.com",
+      storageBucket: "myepicodusdemo.appspot.com",
+    },
     modulePrefix: 'proprental',
     environment: environment,
     baseURL: '/',

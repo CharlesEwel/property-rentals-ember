@@ -1,0 +1,13 @@
+<h4>{{rental.city}}</h4>
+<ul>
+  <li>{{rental.bedrooms}}</li>
+  <li>{{rental.type}}</li>
+  <li>{{rental.rate}}</li>
+  <li>{{rental.owner}}</li>
+</ul>
+{{#if isImageShowing}}
+  <p><img src={{rental.image}} alt={{rental.type}} {{action 'imageHide'}}></p>
+{{else}}
+  <button {{action 'imageShow'}}>Show image</button>
+{{/if}}
+<button {{action 'delete' rental}}>Delete</button>
