@@ -19,5 +19,19 @@
     "bedrooms": 3,
     "image": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Wheeldon_Apartment_Building_-_Portland_Oregon.jpg",
     "rate": 19.95
-  }]
+  }],
+
+  "announcements": [{
+      "title": "Weather Heating Up",
+      "content": "It is expected to be very hot this weekend. Wear shorts.",
+      "date": "August 12th"
+    }, {
+      "title": "Construction on 99E",
+      "content": "There is going to be construction on 99E this week. Expect increased traffic and delays",
+      "date": "August 14th"
+    }, {
+      "title": "Ember",
+      "content": "We will be learning Ember this week. Fun!",
+      "date": "August 15th"
+    }]
 }
