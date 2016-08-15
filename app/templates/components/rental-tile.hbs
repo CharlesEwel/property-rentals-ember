@@ -1,13 +1,7 @@
-<h4>{{rental.city}}</h4>
-<ul>
-  <li>{{rental.bedrooms}}</li>
-  <li>{{rental.type}}</li>
-  <li>{{rental.rate}}</li>
-  <li>{{rental.owner}}</li>
-</ul>
-{{#if isImageShowing}}
-  <p><img src={{rental.image}} alt={{rental.type}} {{action 'imageHide'}}></p>
-{{else}}
-  <button {{action 'imageShow'}}>Show image</button>
-{{/if}}
-<button {{action 'delete' rental}}>Delete</button>
+<li>{{#link-to 'rental' rental.id}}{{rental.owner}}'s {{rental.type}} in {{rental.city}} {{/link-to}}
+  {{#if isImageShowing}}
+    <p><img src={{rental.image}} alt={{rental.type}} {{action 'imageHide'}}></p>
+  {{else}}
+    <button {{action 'imageShow'}}>Image</button>
+  {{/if}}
+</li>
